@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PressTone</title>
+<style>
+  :root{--bg:#fbfbfd;--card:#fff;--tx:#1d1d1f;--tx2:#48484a;--tx3:#86868b;--line:#e6e6ea;--accent:#e0577f}
+  @media (prefers-color-scheme: dark){:root{--bg:#0e1015;--card:#171a22;--tx:#e8eaf0;--tx2:#a8aec0;--tx3:#6f768a;--line:#262b36}}
+  body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",Arial,sans-serif}
+  .wrap{max-width:640px;margin:0 auto;padding:72px 22px}
+  h1{font-size:30px;margin:0 0 8px}
+  p{color:var(--tx2)}
+  .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  a.btn{flex:1;min-width:180px;display:block;background:var(--card);border:1px solid var(--line);
+        border-radius:14px;padding:18px 20px;color:var(--tx);text-decoration:none}
+  a.btn:hover{border-color:var(--accent)}
+  .k{font-weight:600}
+  .d{color:var(--tx3);font-size:13px;margin-top:4px}
+  footer{margin-top:48px;color:var(--tx3);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>PressTone</h1>
+  <p>等长训练 · 力量塑形 · 血压记录</p>
+
+  <div class="row">
+    <a class="btn" href="./privacy.html">
+      <div class="k">隐私政策</div>
+      <div class="d">收集什么数据、怎么用、怎么删</div>
+    </a>
+    <a class="btn" href="./support.html">
+      <div class="k">支持</div>
+      <div class="d">常见问题与联系方式</div>
+    </a>
+  </div>
+
+  <footer>© 2026 PressTone</footer>
+</div>
+</body>
+</html>

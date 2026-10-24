@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PressTone · 支持</title>
+<style>
+  :root{
+    --bg:#fbfbfd; --card:#ffffff; --tx:#1d1d1f; --tx2:#48484a; --tx3:#86868b;
+    --line:#e6e6ea; --accent:#e0577f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e1015; --card:#171a22; --tx:#e8eaf0; --tx2:#a8aec0; --tx3:#6f768a; --line:#262b36; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font:16px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro SC","PingFang SC","Helvetica Neue",Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  .badge{display:inline-block;font-size:12px;letter-spacing:.06em;color:var(--accent);
+         border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+         padding:3px 9px;border-radius:999px;margin-bottom:14px}
+  h1{font-size:30px;line-height:1.3;margin:0 0 10px;letter-spacing:-.01em}
+  .meta{color:var(--tx3);font-size:13px}
+  h2{font-size:19px;margin:36px 0 12px}
+  p{margin:10px 0;color:var(--tx2)}
+  strong{color:var(--tx)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--tx);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"＋";color:var(--accent);margin-right:8px;font-weight:600}
+  details[open] summary::before{content:"－"}
+  details p{margin:10px 0 2px}
+  ul{color:var(--tx2);padding-left:22px}
+  li{margin:6px 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .big{font-size:17px}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--tx3);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">SUPPORT</div>
+  <h1>PressTone 支持</h1>
+  <div class="meta">训练记录工具 · 版本 2.0</div>
+
+  <div class="card">
+    <p class="big"><strong>需要帮助？</strong>先看下面的常见问题，多数情况 1 分钟能解决。</p>
+    <p>没找到答案，直接发邮件：<strong><a href="mailto:REPLACE_ME@example.com">REPLACE_ME@example.com</a></strong><br>
+    <span class="meta">（发布前请把邮箱替换成你自己的真实邮箱；建议在正文里写清机型与 iOS 版本）</span></p>
+  </div>
+
+  <h2>常见问题</h2>
+
+  <details>
+    <summary>我的数据会上传到哪里吗？</summary>
+    <p>不会。PressTone 没有服务器，也没有账号系统。训练记录、血压读数、负重设置全部只存在你这台手机上。删掉 App 即彻底删除。</p>
+  </details>
+
+  <details>
+    <summary>换手机 / 重装 App，数据还在吗？</summary>
+    <p>不在。因为数据只存在本机，卸载或换机会一起消失。请先在「我的 → 数据 → 导出」保存一份 JSON，换机后在同一个位置「导入」即可恢复（导入是合并，不会覆盖已有记录）。</p>
+  </details>
+
+  <details>
+    <summary>为什么等长训练显示「今天不用做」？</summary>
+    <p>等长训练按周计划排班，同一天不会重复安排。点进卡片仍可以手动开始一次训练，只是不计入周计划的完成度。</p>
+  </details>
+
+  <details>
+    <summary>「居家装备」里的哑铃和弹力带有什么区别？</summary>
+    <p>两套是完全不同的动作与组数：哑铃版用哑铃做（如高脚杯深蹲、哑铃臀推），弹力带版用带子做（如深蹲、臀推、下拉），每个动作的示范视频也不一样。选哪套取决于你家里有什么器械。</p>
+  </details>
+
+  <details>
+    <summary>负重数字没有跟着我的设置变化？</summary>
+    <p>负重分三套独立保存：健身房 / 居家哑铃 / 居家弹力带。请在「我的 → 负重设置」里切到对应页签再改，页面顶部会显示「当前使用中：xxx」。改哪套只影响哪套。</p>
+  </details>
+
+  <details>
+    <summary>为什么建议重量和我的实际能力差很多？</summary>
+    <p>建议值只是起点，不是标准。判断标准是：这个重量做 10–12 次很吃力、还能再做 1–2 次。请按实际能力在设置里调，调完训练页会直接用你的数字。</p>
+  </details>
+
+  <details>
+    <summary>健康数据授权后没有反应？</summary>
+    <p>请在 iOS「设置 → 健康 → 数据访问与设备 → PressTone」里确认「血压」「心率」是开启状态。若之前拒绝过，需要在这里手动打开，App 内不会再弹第二次。</p>
+  </details>
+
+  <details>
+    <summary>训练记录没有写进「健康」App？</summary>
+    <p>需要授予「写入」权限（不只是读取）。授权路径：我的 → 健康数据 → 重新授权，然后在系统弹窗里允许写入。</p>
+  </details>
+
+  <details>
+    <summary>语音提示没声音？</summary>
+    <p>检查三件事：① 侧边静音开关是否打开；② 系统音量；③ 我的 → 提示音里是否选了「关闭」。训练中把 App 切到后台时语音会暂停，这是系统限制。</p>
+  </details>
+
+  <details>
+    <summary>这个 App 能替代医生或药物吗？</summary>
+    <p>不能。PressTone 是运动与生活方式记录工具，不提供诊断、治疗建议，也不能替代医生的处方。如有疾病或正在服药，请遵医嘱；训练中若出现胸闷、头晕、异常气短，请立即停止并就医。</p>
+  </details>
+
+  <h2>反馈问题时请附上</h2>
+  <ul>
+    <li>机型（如 iPhone 16 Pro）与 iOS 版本</li>
+    <li>App 版本（我的 → 最下方）</li>
+    <li>出问题的页面截图</li>
+    <li>复现步骤：点了什么、期望什么、实际发生了什么</li>
+  </ul>
+
+  <footer>
+    <p>PressTone 提供运动与生活方式建议，不构成医疗建议，不能替代医生的诊断与处方。</p>
+    <p>© 2026 PressTone · <a href="./privacy.html">隐私政策</a></p>
+  </footer>
+</div>
+</body>
+</html>
