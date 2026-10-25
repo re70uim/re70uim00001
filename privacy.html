@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PressTone · 隐私政策</title>
+<style>
+  :root{
+    --bg:#fbfbfd; --card:#ffffff; --tx:#1d1d1f; --tx2:#48484a; --tx3:#86868b;
+    --line:#e6e6ea; --accent:#e0577f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e1015; --card:#171a22; --tx:#e8eaf0; --tx2:#a8aec0; --tx3:#6f768a; --line:#262b36; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font:16px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro SC","PingFang SC","Helvetica Neue",Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  header{margin-bottom:34px}
+  .badge{display:inline-block;font-size:12px;letter-spacing:.06em;color:var(--accent);
+         border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+         padding:3px 9px;border-radius:999px;margin-bottom:14px}
+  h1{font-size:30px;line-height:1.3;margin:0 0 10px;letter-spacing:-.01em}
+  .meta{color:var(--tx3);font-size:13px}
+  h2{font-size:19px;margin:38px 0 12px;letter-spacing:-.01em}
+  h3{font-size:16px;margin:22px 0 8px;color:var(--tx2)}
+  p{margin:10px 0;color:var(--tx2)}
+  strong{color:var(--tx)}
+  ul{margin:10px 0;padding-left:22px;color:var(--tx2)}
+  li{margin:6px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  .lead{font-size:17px;color:var(--tx)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--tx2)}
+  th{color:var(--tx);font-weight:600;font-size:13px}
+  .ok{color:#2fbfa8;font-weight:600}
+  .no{color:var(--accent);font-weight:600}
+  footer{margin-top:46px;padding-top:18px;border-top:1px solid var(--line);color:var(--tx3);font-size:13px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px}
+  .toc ol{margin:6px 0;padding-left:20px}
+  .toc a{color:var(--tx2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">PRIVACY POLICY</div>
+    <h1>PressTone 隐私政策</h1>
+    <div class="meta">最后更新：2026 年 10 月 23 日 · 适用版本：2.0</div>
+  </header>
+
+  <div class="card">
+    <p class="lead"><strong>一句话：本应用不收集、不上传、不共享你的任何数据。</strong></p>
+    <p>你的训练记录、档案、血压数据，全部只存在你自己的手机上。我们没有服务器，也没有后台数据库——因为根本没有地方可以上传。</p>
+  </div>
+
+  <div class="toc">
+    <strong>目录</strong>
+    <ol>
+      <li><a href="#s1">我们不会做的事</a></li>
+      <li><a href="#s2">本地存储的数据</a></li>
+      <li><a href="#s3">与「健康」App 的关系</a></li>
+      <li><a href="#s4">导出与导入</a></li>
+      <li><a href="#s5">iCloud 同步</a></li>
+      <li><a href="#s6">儿童隐私</a></li>
+      <li><a href="#s7">政策变更</a></li>
+      <li><a href="#s8">联系我们</a></li>
+    </ol>
+  </div>
+
+  <h2 id="s1">一、我们不会做的事</h2>
+  <ul>
+    <li><span class="no">✕</span> 不收集你的个人信息（姓名、身份证、手机号、位置、通讯录）</li>
+    <li><span class="no">✕</span> 不接入任何第三方分析、广告、追踪 SDK</li>
+    <li><span class="no">✕</span> 不使用你的健康数据做任何商业用途</li>
+    <li><span class="no">✕</span> 不将健康数据提供给数据经纪商或任何第三方</li>
+    <li><span class="no">✕</span> 不上传你设备上的任何内容</li>
+  </ul>
+  <p>本应用没有任何网络请求接口，不存在「上传」这条路径。</p>
+
+  <h2 id="s2">二、本地存储的数据</h2>
+  <p>以下数据保存在 iOS 应用沙盒内的本地数据库（SwiftData / UserDefaults），<strong>不进入 iCloud，不同步到其他设备，我们无法访问</strong>：</p>
+
+  <table>
+    <thead><tr><th>数据</th><th>位置</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>训练记录（时间、类型、时长、达标时长）</td><td>本机</td><td>生成你的个人报告</td></tr>
+      <tr><td>动作组记录（动作、组数、负重、用力感）</td><td>本机</td><td>计算下次该加多少</td></tr>
+      <tr><td>档案（昵称、出生年月、目标模式、阶段）</td><td>本机</td><td>计算训练强度与排班</td></tr>
+      <tr><td>负重设置（健身房 / 哑铃 / 弹力带三套）</td><td>本机 UserDefaults</td><td>记住每个动作的重量</td></tr>
+      <tr><td>训练选项（场景、时长、提示音偏好）</td><td>本机</td><td>记住你的偏好</td></tr>
+      <tr><td>血压读数缓存</td><td>本机</td><td>展示训练日与非训练日的趋势对比</td></tr>
+      <tr><td>心率校准结果</td><td>本机</td><td>服药后用实测区间替代公式区间</td></tr>
+      <tr><td>界面语言、App 图标偏好</td><td>本机</td><td>记住你的界面选择</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>删除本应用即彻底删除上述全部数据。</strong>没有云端副本，无需另行清理。</p>
+
+  <h2 id="s3">三、与「健康」App 的关系</h2>
+  <p>经你明确授权后，本应用会：</p>
+  <ul>
+    <li><strong>读取</strong>：血压记录、心率（用于把训练日与非训练日的数值放在一起对比）</li>
+    <li><strong>写入</strong>：等长训练与有氧训练记录（方便你与其他 App 或医生共享）</li>
+  </ul>
+  <p>写入「健康」的数据归属与管理权在你手里，可随时在「健康」App 中删除。本应用<strong>不会读取</strong>与训练无关的健康类别，也<strong>不会</strong>修改你手动录入的血压数据。</p>
+  <p>未授权时，除健康数据相关页面外的所有功能均可正常使用。</p>
+
+  <h2 id="s4">四、导出与导入（可选）</h2>
+  <p>你可以在「我的 → 数据 → 导出 / 导入历史」把全部数据打包成一个 JSON 文件，用系统分享面板自行保存到「文件」App、邮件发给自己，或任意你选择的位置。</p>
+  <ul>
+    <li>导出与导入<strong>全程不联网</strong>，本应用不主动上传任何内容。</li>
+    <li>导入是<strong>合并</strong>而非覆盖：已有记录不会被删除，重复的会自动跳过。</li>
+    <li>你完全可以不导出——不导出不影响任何功能。</li>
+  </ul>
+
+  <h2 id="s5">五、iCloud 同步</h2>
+  <p>当前版本<strong>不启用</strong> iCloud 同步，所有数据只在这台设备上。若将来加入，我们会：① 提前在 App 内明确告知并征得同意；② 同步内容仍只存在你的 Apple ID 私有数据库，开发方无法读取；③ 提供关闭开关。</p>
+
+  <h2 id="s6">六、儿童隐私</h2>
+  <p>本应用不面向 13 岁以下儿童，也不会主动收集任何年龄以下用户的个人信息（事实上不收集任何人的个人信息）。</p>
+
+  <h2 id="s7">七、政策变更</h2>
+  <p>若本政策发生实质变更，会在 App 内以明显方式提示，并更新本页顶部的「最后更新」日期。继续使用即表示接受更新后的政策。</p>
+
+  <h2 id="s8">八、联系我们</h2>
+  <div class="card">
+    <p>对隐私有任何疑问，或认为本应用存在与你预期不符的行为，请联系：</p>
+    <p><strong>邮箱：<a href="mailto:ozz96@139.com">ozz96@139.com</a></strong></p>
+  </div>
+
+  <footer>
+    <p>PressTone 提供运动与生活方式建议，不构成医疗建议，不能替代医生的诊断与处方。</p>
+    <p>© 2026 PressTone</p>
+  </footer>
+</div>
+</body>
+</html>
